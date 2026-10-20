@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task4</title>
+    </head>
+    <body>
+        <h1 id="1"></h1>
+        <table>
+            <tr>
+                <td><button onclick=call("Sita")>Sita</button></td>
+                <td><button onclick=call("Lax")>Lax</button></td>
+                <td><button onclick=call("Latha")>Latha</button></td>
+                <td><button onclick=call("Jc")>Jc</button></td>
+            </tr>
+        </table>
+        <script>
+            a=document.getElementById("1")
+            function call(name){
+                if (name=="Sita"){
+                    a.textContent=name+" "+"is the 1st daughter"
+                }
+                else if (name=="Lax"){
+                    a.textContent=name+" "+"is the 2nd daughter"
+                }
+                else if (name=="Latha"){
+                    a.textContent=name+" "+"is the mom"
+                }
+                else if (name=="Jc"){
+                    a.textContent=name+" "+"is the dad"
+                }
+                else{
+
+                }
+            }
+        </script>
+    </body>
+</html>
