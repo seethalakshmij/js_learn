@@ -1,0 +1,62 @@
+<!--Data manipulation concept-->
+
+<p id="sita">hello</p>
+<script>
+    para=document.getElementById("sita")
+    console.log(para.textContent)
+    para.textContent = "hello sweet sita"
+    console.log(para.textContent)
+</script>
+
+<h1 id="Title">hello world</h1>
+
+<script>
+    cont=document.getElementById("Title")
+    console.log(cont)
+    cont.textContent="bye world"
+</script>
+
+
+
+<!--Data event content-->
+<!--two buttons of 2 events are created-->
+<button onclick="change()">switch</button>
+<button onmouseover="lax()">mesy.eee</button>
+
+<p id="name">i am seetha</p>
+
+<script>
+    a=document.getElementById("name")
+    function change(){
+        a.textContent="i am a good girl"
+    }
+    function lax(){
+        a.textContent="i am lax"
+    }
+</script>
+
+
+
+
+
+
+
+
+
+<!--input box example-->
+
+<input type="number" id="nom" >
+<input type="number" id="nom1">
+
+<input type="number" id="result">
+
+<button onclick="add()">click me to add</button>
+
+<script>
+    a=document.getElementById("nom")
+    b=document.getElementById("nom1")
+    function add(){
+        c=Number(a.value)+Number(b.value)
+        document.getElementById("result").value=c
+    }
+</script>

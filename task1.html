@@ -1,0 +1,50 @@
+<!--GUESS THE NUMBER-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge</title>
+    </head>
+
+    <body>
+        <h1>GUESS THE NUMBER FROM 1 TO 10</h1>
+
+
+        <table>
+            <tr>
+                <td><input type="number" id="noom" placeholder="enter a number"></td>
+                <td><button onclick="checks()">check</button></td>
+            </tr>
+        </table>
+        <p id="result"></p>
+
+        <script>
+            
+            a=Math.floor(((Math.random())*10)+1)
+
+            var point = 10
+            console.log(a)
+
+            res=document.getElementById("result")
+
+
+            function checks(){
+
+                    input_num=document.getElementById("noom")
+                    input_number = Number(input_num.value)
+
+                    if (input_number==a){
+                        res.textContent="your score is"+" "+point
+                        document.querySelector("button").disabled=true
+                    }
+                    else{
+                        point=point-1
+                        res.textContent="oops! your point is " + point
+                    
+                    }
+                }
+            
+
+        </script>
+    </body>
+</html>
