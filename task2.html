@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task2</title>
+    </head>
+
+    <body>
+        <input type="text" id="one" onkeyup="display()">
+        <h1 id="two"></h1>
+    </body>
+
+    <script>
+        function display(){
+            values= document.getElementById("one")
+            result=values.value
+            b=document.getElementById("two")
+            b.textContent=result
+        }
+    </script>
+</html>

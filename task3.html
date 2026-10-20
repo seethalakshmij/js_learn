@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task3</title>
+    </head>
+
+    <body>
+        <button onclick="add()">add hello</button>
+        <h1 id="one"></h1>
+
+        <script>
+            function add(){
+                a=document.createElement("h1")
+                a.textContent = "Hello"
+                x= document.getElementById("one")
+                x.append(a)
+
+            }
+        </script>
+    </body>
+</html>
