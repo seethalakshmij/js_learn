@@ -3,8 +3,6 @@ if (5>2){
     console.log("5 is bigger!!")
 }
 
-
-
 //if-else statement
 if (5==2){
     console.log("5 is equal to 2")
@@ -28,6 +26,7 @@ else {
     console.log("I bought a nothing")
 }
 
+
 //Nested if
 a=100
 b=200
@@ -36,6 +35,7 @@ if (a<=b){
         console.log("a is smaller than" +" "+b +", "+"but greater than 50")
     }
 }
+
 
 //switch statement
 day=2
